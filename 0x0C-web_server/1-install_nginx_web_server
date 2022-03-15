@@ -3,10 +3,9 @@
 
 sudo apt update
 sudo apt install nginx -y
-sudo ufw allow 22
 sudo ufw allow 80
 sudo ufw --force enable
 sudo ufw status
 systemctl status nginx
-echo 'Holberton School' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
+echo 'Hello World!' | sudo tee /var/www/html/index.nginx-debian.html > /dev/null
 sudo service nginx restart
