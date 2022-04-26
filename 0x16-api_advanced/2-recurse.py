@@ -16,7 +16,7 @@ def recurse(subreddit, hot_list=[]):
     for a given subreddit
     """
     import requests
-    
+
     if type(subreddit) is list:
         url = "https://api.reddit.com/r/{}?sort=hot".format(subreddit[0])
         url = "{}&after={}".format(url, subreddit[1])
